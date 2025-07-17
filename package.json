@@ -1,0 +1,24 @@
+{
+  "name": "netstream",
+  "version": "1.0.0",
+  "description": "Plataforma de streaming Netstream con CI/CD y pruebas básicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TravailZamilo/NetStream.git"
+  },
+  "keywords": [],
+  "author": "Camilo Cáceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TravailZamilo/NetStream/issues"
+  },
+  "homepage": "https://github.com/TravailZamilo/NetStream#readme",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "type": "module"
+}

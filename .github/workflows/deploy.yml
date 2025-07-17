@@ -13,10 +13,16 @@ jobs:
       - name: Clonar repositorio
         uses: actions/checkout@v3
 
+      - name: Instalar dependencias del proyecto
+        run: npm install
+
+      - name: Ejecutar tests con Jest
+        run: npm test
+
       - name: Instalar HTMLHint (opcional)
         run: npm install -g htmlhint
 
-      - name: Validar HTML (simulado con éxito forzado si no hay HTMLHint config)
+      - name: Validar HTML (simulado con éxito si no hay .htmlhintrc)
         run: |
           if [ -f .htmlhintrc ]; then
             htmlhint .
