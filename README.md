@@ -170,42 +170,42 @@ describe('Botones principales en la interfaz', () => {
 
 ---
 
-## 🖼️ Captura de pantalla
+## 🖼️ Capturas de pantalla
 
-![Captura Netstream](https://via.placeholder.com/800x400.png?text=Captura+de+Netstream)
+![Vista de Netstream](./screenshots/image20.png)
 
 `Conexión con Instant Connect`
-![alt text](image-8.png)
+![Iconnect](./screenshots/image-8.png)
 
 `EC2 Corriendo desde Autoscaling` 
-![alt text](image.png)
+![EC2](./screenshots/image.png)
 
 `Github Actions` 
-![alt text](image-1.png)
+![Actions](./screenshots/image-1.png)
 
 `Seguridad configurada en AWS`
-![alt text](image-2.png)
+![Seguridad](./screenshots/image-2.png)
 
 `Prueba Jest pasando en local`
-![alt text](image-3.png)
+![Test](./screenshots/image-3.png)
 
 `AutoScaling configurado y grupo con instancias`
-![alt text](image-4.png)
+![alt text](./screenshots/image-4.png)
 
-![alt text](image-5.png)
+![Autoscaling](./screenshots/image-5.png)
 
 `Load Balancer con estado activo y target group saludable`
 
-![alt text](image-6.png)
+![LoadB](./screenshots/image-6.png)
 
 ---
 ## 🧱 Arquitectura de la Solución
 
-![alt text](image-7.png)
+![Infraestructura](./screenshots/image-7.png)
 
 La infraestructura de Netstream se organiza en tres capas principales, integrando automatización, escalabilidad y monitoreo:
 
-### 🧑‍💻 Entorno Local
+### Entorno Local
 - Desarrollo del frontend (HTML, CSS, JS).
 - Validación del código con **HTMLHint**.
 - Pruebas automatizadas con **Jest**.
@@ -236,21 +236,21 @@ La infraestructura de Netstream se organiza en tres capas principales, integrand
 ## 🖼️ Capturas de la Plataforma Desplegada
 
 1. Vista de Netstream en navegador desde ALB:
-   ![alt text](image-9.png)
+   ![Homepage](./screenshots/image-9.png)
 
-   ![alt text](image-10.png)
+   ![Continuar viendo](./screenshots/image-10.png)
 
-   ![alt text](image-11.png)
+   ![Populares y series](./screenshots/image-11.png)
 
-   ![alt text](image-12.png)
+   ![Pie de Pag](./screenshots/image-12.png)
 
 
 
 
 2. Inicio de Sesión y Registro
-    ![alt text](image-13.png)
+    ![Iniciar Sesión](./screenshots/image-13.png)
 
-    ![alt text](image-14.png)
+    ![Registrarse](./screenshots/image-14.png)
    
 
 ---
