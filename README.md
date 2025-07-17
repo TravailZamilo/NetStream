@@ -238,7 +238,7 @@ La infraestructura de Netstream se organiza en tres capas principales, integrand
 
 ## 🖼️ Capturas de la Plataforma Desplegada
 
-### 🌐 1. Vista de Netstream en navegador desde ALB
+### 🌐 1. Vista de Netstream en navegador desdeALB
 
 ![Homepage](./screenshots/image-9.png)
 ![Continuar viendo](./screenshots/image-10.png)
