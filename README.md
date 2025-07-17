@@ -172,36 +172,37 @@ describe('Botones principales en la interfaz', () => {
 
 ## 🖼️ Capturas de pantalla
 
-![Vista de Netstream](./screenshots/image20.png)
+### 🖥 Vista de Simulando Movil
+![Netstream](./screenshots/image20.png)
 
-`Conexión con Instant Connect`
-![Iconnect](./screenshots/image-8.png)
+### 🔌 Conexión con Instant Connect
+![Instant Connect](./screenshots/image-8.png)
 
-`EC2 Corriendo desde Autoscaling` 
-![EC2](./screenshots/image.png)
+### 💻 EC2 Corriendo desde Auto Scaling
+![EC2 Running](./screenshots/image.png)
 
-`Github Actions` 
-![Actions](./screenshots/image-1.png)
+### ⚙️ Ejecución de GitHub Actions
+![GitHub Actions](./screenshots/image-1.png)
 
-`Seguridad configurada en AWS`
-![Seguridad](./screenshots/image-2.png)
+### 🔐 Seguridad configurada en AWS
+![Security Group](./screenshots/image-2.png)
 
-`Prueba Jest pasando en local`
-![Test](./screenshots/image-3.png)
+### 🧪 Prueba Jest pasando en local
+![Jest Test](./screenshots/image-3.png)
 
-`AutoScaling configurado y grupo con instancias`
-![alt text](./screenshots/image-4.png)
+### 📈 Auto Scaling configurado y grupo con instancias
+![Auto Scaling 1](./screenshots/image-4.png)
+![Auto Scaling 2](./screenshots/image-5.png)
 
-![Autoscaling](./screenshots/image-5.png)
-
-`Load Balancer con estado activo y target group saludable`
-
-![LoadB](./screenshots/image-6.png)
+### 🔀 Load Balancer activo con Target Group saludable
+![Load Balancer](./screenshots/image-6.png)
 
 ---
+
 ## 🧱 Arquitectura de la Solución
 
-![Infraestructura](./screenshots/image-7.png)
+![Infraestructura Netstream](./screenshots/image-7.png)
+
 
 La infraestructura de Netstream se organiza en tres capas principales, integrando automatización, escalabilidad y monitoreo:
 
@@ -235,22 +236,19 @@ La infraestructura de Netstream se organiza en tres capas principales, integrand
 ---
 ## 🖼️ Capturas de la Plataforma Desplegada
 
-1. Vista de Netstream en navegador desde ALB:
-   ![Homepage](./screenshots/image-9.png)
+## 🖼️ Capturas de la Plataforma Desplegada
 
-   ![Continuar viendo](./screenshots/image-10.png)
+### 🌐 1. Vista de Netstream en navegador desde ALB
 
-   ![Populares y series](./screenshots/image-11.png)
+![Homepage](./screenshots/image-9.png)
+![Continuar viendo](./screenshots/image-10.png)
+![Populares y series](./screenshots/image-11.png)
+![Pie de página](./screenshots/image-12.png)
 
-   ![Pie de Pag](./screenshots/image-12.png)
+### 🔐 2. Inicio de Sesión y Registro
 
-
-
-
-2. Inicio de Sesión y Registro
-    ![Iniciar Sesión](./screenshots/image-13.png)
-
-    ![Registrarse](./screenshots/image-14.png)
+![Iniciar Sesión](./screenshots/image-13.png)
+![Registrarse](./screenshots/image-14.png)
    
 
 ---
