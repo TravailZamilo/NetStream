@@ -192,7 +192,7 @@ describe('Botones principales en la interfaz', () => {
 
 ### 📈 Auto Scaling configurado y grupo con instancias
 ![Auto Scaling 1](./screenshots/image-4.png)
-![Auto Scaling 2](./screenshots/image-5.png)
+
 
 ### 🔀 Load Balancer activo con Target Group saludable
 ![Load Balancer](./screenshots/image-6.png)
