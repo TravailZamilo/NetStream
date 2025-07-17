@@ -1,0 +1,36 @@
+name: Deploy Netstream Frontend to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Subir archivos a EC2 con SCP
+        uses: appleboy/scp-action@v0.1.3
+        with:
+          host: ${{secrets.EC2_HOST }}
+          username: ${{secrets.EC2_USER }}
+          port: ${{secrets.EC2_PORT }}
+          key: ${{secrets.EC2_SSH_KEY }}
+          source: "./*"
+          target: "/tmp/netstream"
+
+      - name: Copiar archivos al directorio de Nginx
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{secrets.EC2_HOST }}
+          username: ${{secrets.EC2_USER }}
+          port: ${{secrets.EC2_PORT }}
+          key: ${{secrets.EC2_SSH_KEY }}
+          script: |
+            sudo rm -rf /usr/share/nginx/html/*
+            sudo cp -r /tmp/netstream/* /usr/share/nginx/html/
+            sudo systemctl restart nginx

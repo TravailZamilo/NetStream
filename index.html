@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netstream - La Nueva Era del Streaming</title>
+  <meta name="description" content="Descubre contenido exclusivo en Netstream..." />
+  <meta name="keywords" content="streaming, películas, series, entretenimiento" />
+  <meta name="author" content="Netstream" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav-container">
+      <a href="#" class="logo">
+        <i class="fas fa-play-circle"></i> Netstream
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#explore">Explorar</a></li>
+        <li><a href="#account">Mi Cuenta</a></li>
+        <li><a href="#subscription">Suscripción</a></li>
+        <li><a href="#support">Soporte</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <button class="btn btn-secondary" onclick="openModal('loginModal')">
+          <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+        </button>
+        <button class="btn btn-primary" onclick="openModal('registerModal')">
+          <i class="fas fa-user-plus"></i> Registrarse
+        </button>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1489599088114-7d71b1b2ca02?auto=format&fit=crop&w=2070&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=2125&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=2070&q=80')"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">El Futuro del Streaming</h1>
+      <p class="hero-subtitle">Descubre contenido exclusivo con tecnología inmersiva y calidad 4K</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary btn-hero"><i class="fas fa-play"></i> Comenzar Ahora</button>
+        <button class="btn btn-secondary btn-hero"><i class="fas fa-info-circle"></i> Más Información</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secciones de Contenido -->
+  <section class="content-section" id="explore">
+    <div class="content-row fade-in">
+      <h2 class="section-title">Continuar Viendo</h2>
+      <div class="content-carousel" id="continueWatching"></div>
+    </div>
+    <div class="content-row fade-in">
+      <h2 class="section-title">Populares en tu Zona</h2>
+      <div class="content-carousel" id="popularContent"></div>
+    </div>
+    <div class="content-row fade-in">
+      <h2 class="section-title">Series Sci-Fi</h2>
+      <div class="content-carousel" id="scifiSeries"></div>
+    </div>
+    <div class="content-row fade-in">
+      <h2 class="section-title">Documentales Exclusivos</h2>
+      <div class="content-carousel" id="documentaries"></div>
+    </div>
+  </section>
+
+  <!-- Modales -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('loginModal')">&times;</span>
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">Iniciar Sesión</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" />
+          <div class="error-message">Email inválido</div>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Contraseña</label>
+          <input type="password" id="loginPassword" />
+          <div class="error-message">Contraseña requerida</div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('registerModal')">&times;</span>
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">Registrarse</h2>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="registerName">Nombre Completo</label>
+          <input type="text" id="registerName" />
+          <div class="error-message">Nombre requerido</div>
+        </div>
+        <div class="form-group">
+          <label for="registerEmail">Email</label>
+          <input type="email" id="registerEmail" />
+          <div class="error-message">Email inválido</div>
+        </div>
+        <div class="form-group">
+          <label for="registerPassword">Contraseña</label>
+          <input type="password" id="registerPassword" />
+          <div class="error-message">Mínimo 8 caracteres</div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          <i class="fas fa-user-plus"></i> Registrarse
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Netstream</h3>
+        <p>La plataforma de streaming del futuro con contenido exclusivo y tecnología inmersiva.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Navegación</h3>
+        <a href="#home">Inicio</a>
+        <a href="#explore">Explorar</a>
+        <a href="#account">Mi Cuenta</a>
+        <a href="#subscription">Suscripción</a>
+      </div>
+      <div class="footer-section">
+        <h3>Soporte</h3>
+        <a href="#support">Centro de Ayuda</a>
+        <a href="#contact">Contacto</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#privacy">Privacidad</a>
+        <a href="#terms">Términos</a>
+        <a href="#cookies">Cookies</a>
+        <select>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
