@@ -20,5 +20,8 @@
   "devDependencies": {
     "jest": "^29.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "jest": {
+    "testMatch": ["**/tests/**/*.js"]
+  }
 }
